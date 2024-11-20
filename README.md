@@ -13,6 +13,8 @@ npm create vite@latest
 
 cd nome_do_projeto
 
+npm install
+
 - para inciar 
 
 npm run dev
