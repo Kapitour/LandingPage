@@ -13,8 +13,6 @@ npm create vite@latest
 
 cd nome_do_projeto
 
-npm install
-
 - para inciar 
 
 npm run dev
@@ -22,6 +20,9 @@ npm run dev
 - instale o styled-components dentro da pasta do projeto 
 
 npm install styled-components
+
+npm install react-router-dom
+
 
 # Para rodar o projeto
 

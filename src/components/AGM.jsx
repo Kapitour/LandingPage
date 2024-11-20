@@ -25,7 +25,7 @@ const SubContainer = styled.div`
 `;
 
 const AgmLogo = styled.div`
-  background-image: url("./src/assets/agm.png");
+  background-image: url("./src/assets/home/agm.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

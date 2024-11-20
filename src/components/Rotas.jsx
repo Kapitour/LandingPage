@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Container = styled.div`
-  background-image: url("./src/assets/araçariba.jpg");
+  background-image: url("./src/assets/home/araçariba.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -33,7 +33,7 @@ const Container = styled.div`
 `;
 
 const SubContainer = styled.div`
-  background-image: url("./src/assets/araçariba.jpg");
+  background-image: url("./src/assets/home/araçariba.jpg");
   background-size: cover; /* Imagem ajustada ao tamanho */
   background-repeat: no-repeat;
   background-position: center;
@@ -98,7 +98,7 @@ const Rotas = () => {
           Veja guias para aproveitar paisagens, restaurantes e experiências
           únicas
         </Text>
-        <Btn href="#">Guias</Btn>
+        <Btn href="#">Rotas</Btn>
       </SubContainer>
     </Container>
   );

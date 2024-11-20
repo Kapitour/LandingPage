@@ -1,25 +1,18 @@
-import Header from './components/Hearder'
-import Painel from './components/Painel'
-import Mapa from './components/Mapa'
-import Agm from './components/AGM'
-import Rotas from './components/Rotas'
-import Caroussel from './components/Caroussel'
-import Footer from './components/Footer'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Login from "./components/Login"; // Importe o Login.jsx
+import Home from "./components/Home"; // Importe o Home.jsx
 
-
-function App() {
-
+const App = () => {
   return (
-    <>
-     <Header />
-     <Painel />
-     <Mapa />
-     <Agm />
-     <Rotas />
-     <Caroussel />
-     <Footer />
-    </>
-  )
-}
+    <Router>
+      <Routes>
+        {/* Rota para a página inicial */}
+        <Route path="/" element={<Home />} />
+        {/* Rota para o Login */}
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </Router>
+  );
+};
 
-export default App
+export default App;
