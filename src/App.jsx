@@ -2,8 +2,9 @@ import Header from './components/Hearder'
 import Painel from './components/Painel'
 import Mapa from './components/Mapa'
 import Agm from './components/AGM'
-import Guia from './components/Guia'
-import './App.css'
+import Rotas from './components/Rotas'
+import Caroussel from './components/Caroussel'
+import Footer from './components/Footer'
 
 
 function App() {
@@ -14,8 +15,9 @@ function App() {
      <Painel />
      <Mapa />
      <Agm />
-     <Guia />
-     <Mapa />
+     <Rotas />
+     <Caroussel />
+     <Footer />
     </>
   )
 }

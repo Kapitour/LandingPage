@@ -1,8 +1,33 @@
-# React + Vite
+# Instalando o necessário para rodar a pàgina
+- no terminal faça:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+npm create vite@5.4.10 .
 
-Currently, two official plugins are available:
+- se não for use 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+npm create vite@latest 
+
+- Siga o passo a passo indicado e escolha linguagem JavaScript
+
+- Faça o comando 
+
+cd nome_do_projeto
+
+- para inciar 
+
+npm run dev
+
+- instale o styled-components dentro da pasta do projeto 
+
+npm install styled-components
+
+# Para rodar o projeto
+
+- faça o download dos arquivos 
+
+- Copie a pasta src e substitua pela atual 
+- Substitua também o index.html
+
+
+
+

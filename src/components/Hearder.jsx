@@ -129,7 +129,7 @@ const Header = () => {
     <>
       <HeaderMenu>
         <Logo />
-        <HeaderBtn>Guias</HeaderBtn>
+        <HeaderBtn>Rotas</HeaderBtn>
         <HeaderBtn>Contato</HeaderBtn>
         <HeaderBtn>Loja</HeaderBtn>
         <LoginBtn>Login</LoginBtn>

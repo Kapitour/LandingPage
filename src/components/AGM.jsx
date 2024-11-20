@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Container = styled.div`
-    background: linear-gradient(
+  background: linear-gradient(
     to top,
     rgba(201, 52, 52, 0) 0%,
     rgb(194, 38, 38) 25%,
@@ -25,7 +25,6 @@ const SubContainer = styled.div`
 `;
 
 const AgmLogo = styled.div`
-
   background-image: url("./src/assets/agm.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -33,8 +32,8 @@ const AgmLogo = styled.div`
   width: 50%;
   height: 70%;
   flex: 1;
-    /* Máscara para criar transparência nas bordas superior e inferior */
-    -webkit-mask-image: linear-gradient(
+  /* Máscara para criar transparência nas bordas superior e inferior */
+  -webkit-mask-image: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0) 0%,
     rgba(0, 0, 0, 1) 40%,
@@ -78,7 +77,8 @@ const ContactBtn = styled.a`
   width: 200px;
   border-radius: 10px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s ease, letter-spacing 0.3s ease, text-shadow 0.3s ease;
+  transition: transform 0.3s ease, letter-spacing 0.3s ease,
+    text-shadow 0.3s ease;
 
   &:hover {
     letter-spacing: 1px;
@@ -98,7 +98,9 @@ const Agm = () => {
           profissional do ramo de forma segura? Entre em contato e não se
           esqueça de dizer que buscou por meio da Kapitour!
         </AgmTXT>
-        <ContactBtn href="https://wa.me/5521971292030?text=Ol%C3%A1%20vim%20pela%20Kapitour%20e%20gostaria%20de%20contratar%20um%20guia%20de%20turismo!">Guias de Turismo</ContactBtn>
+        <ContactBtn href="https://wa.me/5521971292030?text=Ol%C3%A1%20vim%20pela%20Kapitour%20e%20gostaria%20de%20contratar%20um%20guia%20de%20turismo!">
+          Guias de Turismo
+        </ContactBtn>
       </SubContainer>
     </Container>
   );
