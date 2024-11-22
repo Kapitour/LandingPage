@@ -21,7 +21,6 @@ const HeaderMenu = styled.header`
 `;
 
 const Logo = styled(Link)`
-  // Usando Link do React Router para logo
   background-image: url("./src/assets/home/KapitourHeader.png");
   background-size: cover;
   width: 70px;
@@ -36,7 +35,6 @@ const Logo = styled(Link)`
 `;
 
 const HeaderBtn = styled(Link)`
-  // Usando Link para navegar
   background-color: transparent;
   color: #fff;
   text-decoration: none;
@@ -46,7 +44,6 @@ const HeaderBtn = styled(Link)`
   line-height: 45px;
   max-width: 160px;
   position: relative;
-  text-decoration: none;
   text-transform: uppercase;
   width: 100%;
   align-items: center;
@@ -62,7 +59,6 @@ const HeaderBtn = styled(Link)`
 `;
 
 const LoginBtn = styled(Link)`
-  // Link para Login
   background-color: rgba(201, 52, 52, 0.884);
   color: #fff;
   text-decoration: none;
@@ -71,12 +67,7 @@ const LoginBtn = styled(Link)`
   font-weight: 400;
   line-height: 45px;
   max-width: 160px;
-  position: relative;
-  text-decoration: none;
   text-transform: uppercase;
-  width: 100%;
-  align-items: center;
-  vertical-align: center;
   border-radius: 10px;
   margin: 0 10px;
   font-weight: bold;
@@ -94,11 +85,10 @@ const LoginBtn = styled(Link)`
 const PainelImg = styled.div`
   position: relative;
   width: 100%;
-  height: 60em; /* Garante que a imagem ocupe toda a altura da tela */
+  height: 60em;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 0; /* Remove o margin-top para começar do topo */
 `;
 
 const PainelImg1 = styled.div`
@@ -125,25 +115,22 @@ const PainelImg2 = styled.div`
   height: 70%;
 `;
 
-const Header = () => {
+const Header = ({ showPainel = true }) => {
   return (
     <>
       <HeaderMenu>
-        <Logo to="/">
-          {" "}
-          {/* Logo agora leva para a Home */}
-          {/* Logo ou Nome */}
-        </Logo>
-        <HeaderBtn to="/">Home</HeaderBtn> {/* Link para Home */}
+        <Logo to="/" />
         <HeaderBtn to="/rotas">Rotas</HeaderBtn>
         <HeaderBtn to="/contato">Contato</HeaderBtn>
         <HeaderBtn to="/loja">Loja</HeaderBtn>
         <LoginBtn to="/login">Login</LoginBtn>
       </HeaderMenu>
-      <PainelImg>
-        <PainelImg1 />
-        <PainelImg2 />
-      </PainelImg>
+      {showPainel && (
+        <PainelImg>
+          <PainelImg1 />
+          <PainelImg2 />
+        </PainelImg>
+      )}
     </>
   );
 };

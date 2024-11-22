@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
 
 // Estilo para o contêiner principal
 const Container = styled.div`
@@ -105,9 +106,86 @@ const Link = styled.a`
   }
 `;
 
+const Divider = styled.div`
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+
+  &::before,
+  &::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  span {
+    margin: 0 10px;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+  }
+`;
+
+const SocialIcons = styled.div`
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+`;
+
+const IconButton = styled.button`
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(201, 52, 52, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  color: #fff;
+  font-size: 18px;
+
+  &:hover {
+    transform: scale(1.1);
+    background-color: rgba(201, 52, 52, 1);
+  }
+`;
+
+const BackButton = styled.button`
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(201, 52, 52, 0.9);
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    background-color: rgba(201, 52, 52, 1);
+  }
+`;
+
 const Login = () => {
+  const navigate = useNavigate();
+
   return (
     <Container>
+      <BackButton onClick={() => navigate("/")}>
+        &lt;
+      </BackButton>
       <SubContainer>
         <LogoSection>
           <Logo />
@@ -120,8 +198,18 @@ const Login = () => {
               <Label>Senha:</Label>
               <Input type="password" required />
               <Button type="submit">Login</Button>
-              <Link href="/cadastro">Cadastrar-se</Link>
+              <Link href="/register">Cadastrar-se</Link>
             </form>
+
+            <Divider>
+              <span>Login Por:</span>
+            </Divider>
+
+            <SocialIcons>
+              <IconButton>G</IconButton>
+              <IconButton>F</IconButton>
+              <IconButton>T</IconButton>
+            </SocialIcons>
           </FormBox>
         </FormSection>
       </SubContainer>
