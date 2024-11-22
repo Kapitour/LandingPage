@@ -106,11 +106,11 @@ const Carousel = ({ items }) => {
 
 // Uso do componente
 const images = [
-  "./src/assets/carousel/lagoa.jpg",
-  "./src/assets/carousel/praia.jpg",
-  "./src/assets/carousel/itaipuacu.jpg",
-  "./src/assets/carousel/2.jpg",
-  "./src/assets/carousel/1.png",
+  "https://github.com/Kapitour/Imgs-Padr-o/blob/main/carousel/lagoa.jpg?raw=true",
+  "https://github.com/Kapitour/Imgs-Padr-o/blob/main/carousel/praia.jpg?raw=true",
+  "https://github.com/Kapitour/Imgs-Padr-o/blob/main/carousel/itaipuacu.jpg?raw=true",
+  "https://github.com/Kapitour/Imgs-Padr-o/blob/main/carousel/2.jpg?raw=true",
+  "https://github.com/Kapitour/Imgs-Padr-o/blob/main/carousel/1.png?raw=true",
 ];
 
 const Caroussel = () => {

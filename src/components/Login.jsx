@@ -34,7 +34,7 @@ const LogoSection = styled.div`
 `;
 
 const Logo = styled.div`
-  background-image: url("./src/assets/login/LoginLogo.png");
+  background-image: url("https://github.com/Kapitour/Imgs-Padr-o/blob/main/login/LoginLogo.png?raw=true");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

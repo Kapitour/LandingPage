@@ -31,7 +31,7 @@ const Logo = styled.div`
   top: -100px;
   left: 50%;
   transform: translateX(-50%);
-  background-image: url("./src/assets/login/LoginLogo.png");
+  background-image: url("https://github.com/Kapitour/Imgs-Padr-o/blob/main/login/LoginLogo.png?raw=true");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

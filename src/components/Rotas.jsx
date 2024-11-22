@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Container = styled.div`
-  background-image: url("./src/assets/home/araçariba.jpg");
+  background-image: url("https://github.com/Kapitour/Imgs-Padr-o/blob/main/home/ara%C3%A7ariba.jpg?raw=true");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -33,7 +33,7 @@ const Container = styled.div`
 `;
 
 const SubContainer = styled.div`
-  background-image: url("./src/assets/home/araçariba.jpg");
+  background-image: url("https://github.com/Kapitour/Imgs-Padr-o/blob/main/home/ara%C3%A7ariba.jpg?raw=true");
   background-size: cover; /* Imagem ajustada ao tamanho */
   background-repeat: no-repeat;
   background-position: center;
@@ -98,7 +98,7 @@ const Rotas = () => {
           Veja guias para aproveitar paisagens, restaurantes e experiências
           únicas
         </Text>
-        <Btn href="#">Rotas</Btn>
+        <Btn href="/rotas">Rotas</Btn>
       </SubContainer>
     </Container>
   );

@@ -10,7 +10,7 @@ const ContainerPainel = styled.div`
 `;
 
 const Painel1 = styled.button`
-  background-image: url("./src/assets/home/História.png");
+  background-image: url("https://github.com/Kapitour/Imgs-Padr-o/blob/main/home/Hist%C3%B3ria.png?raw=true");
   width: 30%;
   height: 90%;
   background-size: cover;
@@ -25,7 +25,7 @@ const Painel1 = styled.button`
   transition: all 01s ease; 
 }
   &:hover {
-    background-image: url("./src/assets/home/História2.png");
+    background-image: url("https://github.com/Kapitour/Imgs-Padr-o/blob/main/home/Hist%C3%B3ria2.png?raw=true");
     width: 30%;
     height: 90%;
     background-size: cover;
@@ -38,7 +38,7 @@ const Painel1 = styled.button`
 `;
 
 const Painel2 = styled.button`
-  background-image: url("./src/assets/home/Desenvolvimento.png");
+  background-image: url("https://github.com/Kapitour/Imgs-Padr-o/blob/main/home/Desenvolvimento.png?raw=true");
   width: 30%;
   height: 90%;
   background-size: cover;
@@ -53,7 +53,7 @@ const Painel2 = styled.button`
   transition: all 01s ease; 
 }
   &:hover {
-    background-image: url("./src/assets/home/Desenvolvimento2.png");
+    background-image: url("https://github.com/Kapitour/Imgs-Padr-o/blob/main/home/Desenvolvimento2.png?raw=true");
     width: 30%;
     height: 90%;
     background-size: cover;
@@ -67,7 +67,7 @@ const Painel2 = styled.button`
 
 const Painel3 = styled.button`
   position: relative;
-  background-image: url("./src/assets/home/Belezas.png");
+  background-image: url("https://github.com/Kapitour/Imgs-Padr-o/blob/main/home/Belezas.png?raw=true");
   width: 30%;
   height: 90%;
   background-size: cover;
@@ -82,7 +82,7 @@ const Painel3 = styled.button`
   transition: all 01s ease; 
 }
   &:hover {
-    background-image: url("./src/assets/home/home/Belezas2.png");
+    background-image: url("https://github.com/Kapitour/Imgs-Padr-o/blob/main/home/Belezas2.png?raw=true");
     width: 30%;
     height: 90%;
     background-size: cover;

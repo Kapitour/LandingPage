@@ -4,8 +4,8 @@ const Container = styled.div`
   background: linear-gradient(
     to top,
     rgba(201, 52, 52, 0) 0%,
-    rgb(194, 38, 38) 25%,
-    rgb(194, 38, 38) 75%,
+    rgb(194, 38, 38) 8%,
+    rgb(194, 38, 38) 92%,
     rgba(201, 52, 52, 0) 100%
   );
   display: flex;
@@ -25,28 +25,13 @@ const SubContainer = styled.div`
 `;
 
 const AgmLogo = styled.div`
-  background-image: url("./src/assets/home/agm.png");
+  background-image: url("https://github.com/Kapitour/Imgs-Padr-o/blob/main/home/agm.png?raw=true");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  width: 50%;
-  height: 70%;
+  width: 40%;
+  height: 60%;
   flex: 1;
-  /* Máscara para criar transparência nas bordas superior e inferior */
-  -webkit-mask-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 1) 40%,
-    rgba(0, 0, 0, 1) 80%,
-    rgba(0, 0, 0, 0) 100%
-  );
-  mask-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 1) 40%,
-    rgba(0, 0, 0, 1) 80%,
-    rgba(0, 0, 0, 0) 100%
-  );
 
   /* Garante que a área mascarada seja visível */
   -webkit-mask-repeat: no-repeat;

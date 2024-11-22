@@ -15,13 +15,13 @@ const HeaderMenu = styled.header`
   left: 0;
   width: 100%;
   z-index: 10;
-  padding: 1em 0;
+  padding: 1em;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
   font-weight: bold;
 `;
 
 const Logo = styled(Link)`
-  background-image: url("./src/assets/home/KapitourHeader.png");
+  background-image: url("https://github.com/Kapitour/Imgs-Padr-o/blob/main/home/KapitourHeader.png?raw=true");
   background-size: cover;
   width: 70px;
   height: 50px;
@@ -70,6 +70,7 @@ const LoginBtn = styled(Link)`
   text-transform: uppercase;
   border-radius: 10px;
   margin: 0 10px;
+  width: 150px;
   font-weight: bold;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease, letter-spacing 0.3s ease,
@@ -97,7 +98,7 @@ const PainelImg1 = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("./src/assets/home/BackgroundHeader.png");
+  background-image: url("https://github.com/Kapitour/Imgs-Padr-o/blob/main/home/BackgroundHeader.png?raw=true");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -107,7 +108,7 @@ const PainelImg1 = styled.div`
 
 const PainelImg2 = styled.div`
   position: relative;
-  background-image: url("./src/assets/home/KapitourMarica.png");
+  background-image: url("https://github.com/Kapitour/Imgs-Padr-o/blob/main/home/KapitourMarica.png?raw=true");
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 1;

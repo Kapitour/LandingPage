@@ -11,7 +11,7 @@ const Container = styled.div`
 const Mapa = () => {
   return (
     <Container>
-      <h1>Carrossel</h1>
+      <h1> Carrossel</h1>
     </Container>
   );
 };
