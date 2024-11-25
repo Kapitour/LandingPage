@@ -5,11 +5,13 @@ import Agm from './AGM';
 import Rotas from './Rotas';
 import Caroussel from './Caroussel';
 import Footer from './Footer';
+import Backgroundeffect from './Backgroundeffet';
 
 function Home() {
   return (
     <>
       <Header />
+      <Backgroundeffect />
       <Painel />
       <Mapa />
       <Agm />
