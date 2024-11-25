@@ -2,104 +2,109 @@ import styled from "styled-components";
 
 const ContainerPainel = styled.div`
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  font-weight: bold;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
 `;
 
-const Painel1 = styled.button`
-  background-image: url("https://github.com/Kapitour/Imgs-Padr-o/blob/main/home/Hist%C3%B3ria.png?raw=true");
-  width: 30%;
-  height: 90%;
-  background-size: cover;
-  background-color: transparent;
-  box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.9);
+const Card = styled.div`
+  width: 320px;
+  height: 500px;
   border-top-right-radius: 120px;
   border-bottom-left-radius: 120px;
-  text-shadow: 0px 1px 10px rgba(0, 0, 0, 1);
-  font-size: 50px;
-  font-weight: bold;
-  & {
-  transition: all 01s ease; 
-}
-  &:hover {
-    background-image: url("https://github.com/Kapitour/Imgs-Padr-o/blob/main/home/Hist%C3%B3ria2.png?raw=true");
-    width: 30%;
-    height: 90%;
-    background-size: cover;
-    background-color: transparent;
-    border-top-right-radius: 120px;
-    border-bottom-left-radius: 120px;
-    text-shadow: none;
-    color: transparent;
-  }
-`;
-
-const Painel2 = styled.button`
-  background-image: url("https://github.com/Kapitour/Imgs-Padr-o/blob/main/home/Desenvolvimento.png?raw=true");
-  width: 30%;
-  height: 90%;
-  background-size: cover;
-  background-color: transparent;
-  box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.9);
-  border-top-right-radius: 120px;
-  border-bottom-left-radius: 120px;
-  text-shadow: 0px 1px 10px rgba(0, 0, 0, 1);
-  font-size: 45px;
-  font-weight: bold;
-  & {
-  transition: all 01s ease; 
-}
-  &:hover {
-    background-image: url("https://github.com/Kapitour/Imgs-Padr-o/blob/main/home/Desenvolvimento2.png?raw=true");
-    width: 30%;
-    height: 90%;
-    background-size: cover;
-    background-color: transparent;
-    border-top-right-radius: 120px;
-    border-bottom-left-radius: 120px;
-    text-shadow: none;
-    color: transparent;
-  }
-`;
-
-const Painel3 = styled.button`
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
+  overflow: hidden;
+  border: 8px solid #e94747;
   position: relative;
-  background-image: url("https://github.com/Kapitour/Imgs-Padr-o/blob/main/home/Belezas.png?raw=true");
-  width: 30%;
-  height: 90%;
-  background-size: cover;
-  background-color: transparent;
-  box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.9);
-  border-top-right-radius: 120px;
-  border-bottom-left-radius: 120px;
-  text-shadow: 0px 1px 10px rgba(0, 0, 0, 1);
-  font-size: 50px;
-  font-weight: bold;
-  & {
-  transition: all 01s ease; 
-}
-  &:hover {
-    background-image: url("https://github.com/Kapitour/Imgs-Padr-o/blob/main/home/Belezas2.png?raw=true");
-    width: 30%;
-    height: 90%;
-    background-size: cover;
-    background-color: transparent;
-    border-top-right-radius: 120px;
-    border-bottom-left-radius: 120px;
-    text-shadow: none;
-    color: transparent;
+  &:hover ${() => Cover} {
+    right: 0;
   }
+`;
+
+const Cover = styled.div`
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background-color: rgba(199, 30, 30, 0.418);
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: right 0.5s ease;
+  `;
+  
+  const ImgCard = styled.img`
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  `;
+
+const Titulo = styled.h1`
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 500;
+  padding: 30px;
+`;
+
+const Details = styled.p`
+  text-transform: capitalize;
+  font-size: 17px;
+  font-weight: 300;
+  padding: 0 30px;
 `;
 
 const Painel = () => {
   return (
     <ContainerPainel>
-      <Painel1>História</Painel1>
-      <Painel2>Desenvolvimento</Painel2>
-      <Painel3>Belezas</Painel3>
+      <Card>
+        <ImgCard
+          src="https://github.com/Kapitour/Imgs-Padr-o/blob/main/home/Painel/belezas.jpeg?raw=true"
+          alt="Belezas"
+        />
+        <Cover>
+          <Titulo>Belezas</Titulo>
+          <Details>
+            Venha conhecer as belezas e a biodivercidade no municipio de Maricá.Dentre as diverças opções temos:
+          </Details>
+          <Details>- Praias</Details>
+          <Details>- Cachoeiras</Details>
+          <Details>- Trilhas</Details>
+        </Cover>
+      </Card>
+      <Card>
+        <ImgCard
+          src="https://github.com/Kapitour/Imgs-Padr-o/blob/main/home/Painel/desenvolvimento.jpeg?raw=true"
+          alt="Desenvolvimento"
+        />
+        <Cover>
+          <Titulo>Desenvolvimento</Titulo>
+          <Details>
+            Venha ver o que Maricá tem oferecido de melhor para sociedade. Dentre as diverças opções temos:
+          </Details>
+          <Details>- Centros de Esportes</Details>
+          <Details>- Grandes Escolas</Details>
+          <Details>- Galpão Tecnológico</Details>
+        </Cover>
+      </Card>
+      <Card>
+        <ImgCard
+          src="https://github.com/Kapitour/Imgs-Padr-o/blob/main/home/Painel/historia.png?raw=true"
+          alt="História"
+        />
+        <Cover>
+          <Titulo>História</Titulo>
+          <Details>
+            Venha conhecer a rica história do Municipio de Maricá .Dentre as diverças opções temos:
+          </Details>
+          <Details>- Museus</Details>
+          <Details>- Igrejas</Details>
+          <Details>- Centros Culturais</Details>
+        </Cover>
+      </Card>
     </ContainerPainel>
   );
 };

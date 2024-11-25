@@ -111,6 +111,7 @@ const images = [
   "https://github.com/Kapitour/Imgs-Padr-o/blob/main/carousel/itaipuacu.jpg?raw=true",
   "https://github.com/Kapitour/Imgs-Padr-o/blob/main/carousel/2.jpg?raw=true",
   "https://github.com/Kapitour/Imgs-Padr-o/blob/main/carousel/1.png?raw=true",
+  "https://github.com/Kapitour/Imgs-Padr-o/blob/main/Recanto.jpeg?raw=true"
 ];
 
 const Caroussel = () => {
