@@ -5,6 +5,7 @@ const ContainerPainel = styled.div`
   gap: 20px;
   justify-content: center;
   margin-top: 20px;
+  
 `;
 
 const Card = styled.div`
@@ -17,6 +18,16 @@ const Card = styled.div`
   overflow: hidden;
   border: 8px solid #e94747;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.5s ease, transform 0.5s ease; /* Melhorando a transição */
+  
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)); /* Gradiente suave */
+  
+  &:hover {
+    transform: scale(1.05); /* Pequeno efeito de zoom para chamar atenção */
+  }
+
   &:hover ${() => Cover} {
     right: 0;
   }
@@ -35,13 +46,13 @@ const Cover = styled.div`
   align-items: center;
   justify-content: center;
   transition: right 0.5s ease;
-  `;
-  
-  const ImgCard = styled.img`
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  `;
+`;
+
+const ImgCard = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+`;
 
 const Titulo = styled.h1`
   text-transform: uppercase;
@@ -68,7 +79,7 @@ const Painel = () => {
         <Cover>
           <Titulo>Belezas</Titulo>
           <Details>
-            Venha conhecer as belezas e a biodivercidade no municipio de Maricá.Dentre as diverças opções temos:
+            Venha conhecer as belezas e a biodiversidade no município de Maricá. Dentre as diversas opções temos:
           </Details>
           <Details>- Praias</Details>
           <Details>- Cachoeiras</Details>
@@ -83,7 +94,7 @@ const Painel = () => {
         <Cover>
           <Titulo>Desenvolvimento</Titulo>
           <Details>
-            Venha ver o que Maricá tem oferecido de melhor para sociedade. Dentre as diverças opções temos:
+            Venha ver o que Maricá tem oferecido de melhor para a sociedade. Dentre as diversas opções temos:
           </Details>
           <Details>- Centros de Esportes</Details>
           <Details>- Grandes Escolas</Details>
@@ -98,7 +109,7 @@ const Painel = () => {
         <Cover>
           <Titulo>História</Titulo>
           <Details>
-            Venha conhecer a rica história do Municipio de Maricá .Dentre as diverças opções temos:
+            Venha conhecer a rica história do Município de Maricá. Dentre as diversas opções temos:
           </Details>
           <Details>- Museus</Details>
           <Details>- Igrejas</Details>

@@ -23,6 +23,10 @@ npm install styled-components
 
 npm install react-router-dom
 
+npm install leaflet
+
+npm install react-leaflet
+
 
 # Para rodar o projeto
 

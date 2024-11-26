@@ -24,7 +24,7 @@ const Slide = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f5f5f5;
+  background-color: #1a1a1d;
 `;
 
 const Image = styled.img`

@@ -1,30 +1,28 @@
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 
-// Estilo para o contêiner principal
 const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100vh;
-  background-color: #3e4444;
+  background-color: #1a1a1d; /* Fundo principal */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 `;
 
 const FormBox = styled.div`
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #333; /* Fundo escuro */
   padding: 50px;
   border-radius: 10px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
   text-align: center;
   width: 300px;
   position: relative;
-  overflow: visible; /* Permite que o conteúdo fora do box seja exibido */
+  overflow: visible;
 `;
-
 
 const Logo = styled.div`
   position: absolute;
@@ -43,7 +41,7 @@ const Logo = styled.div`
 const Label = styled.label`
   display: block;
   margin-bottom: 10px;
-  color: #000;
+  color: white; /* Texto claro */
   text-align: left;
 `;
 
@@ -53,14 +51,19 @@ const Input = styled.input`
   margin-bottom: 15px;
   border-radius: 5px;
   border: none;
-  background-color: #dfdfdf;
-  color: #000;
+  background-color: #4e4e50; /* Fundo escuro para inputs */
+  color: white;
   box-sizing: border-box;
+
+  &:focus {
+    outline: none;
+    border: 2px solid #c3073f; /* Destaque ao focar */
+  }
 `;
 
 const Button = styled.button`
-  background-color: rgba(201, 52, 52, 0.884);
-  color: #fff;
+  background-color: #c3073f; /* Vermelho pastel */
+  color: white;
   text-transform: uppercase;
   font-weight: bold;
   width: 100%;
@@ -68,17 +71,18 @@ const Button = styled.button`
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 
   &:hover {
     transform: scale(1.05);
+    background-color: #950740; /* Vermelho mais escuro */
   }
 `;
 
 const Link = styled.a`
   display: block;
   margin-top: 15px;
-  color: rgba(201, 52, 52, 0.884);
+  color: rgba(255, 94, 94, 0.884); /* Vermelho pastel */
   text-decoration: none;
   font-size: 15px;
   font-weight: bold;
@@ -88,7 +92,6 @@ const Link = styled.a`
   }
 `;
 
-// Estilo para o botão de voltar
 const BackButton = styled.button`
   position: absolute;
   top: 20px;
@@ -97,8 +100,8 @@ const BackButton = styled.button`
   height: 40px;
   border-radius: 50%;
   border: none;
-  background-color: rgba(201, 52, 52, 0.9);
-  color: #fff;
+  background-color: #c3073f; /* Vermelho pastel */
+  color: white;
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
@@ -106,11 +109,11 @@ const BackButton = styled.button`
   justify-content: center;
   align-items: center;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 
   &:hover {
     transform: scale(1.1);
-    background-color: rgba(201, 52, 52, 1);
+    background-color: #950740; /* Vermelho mais escuro */
   }
 `;
 
@@ -119,7 +122,7 @@ const Register = () => {
 
   return (
     <Container>
-      <BackButton onClick={() => navigate("/")}>
+      <BackButton onClick={() => navigate("/login")}>
         &lt;
       </BackButton>
       <FormBox>

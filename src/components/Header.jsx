@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom"; // Importando Link para navegação
+import { Link } from "react-router-dom";
 
 // Estilo do Header
 const HeaderMenu = styled.header`
@@ -34,7 +34,7 @@ const Logo = styled(Link)`
   font-weight: bold;
 `;
 
-const HeaderBtn = styled(Link)`
+const HeaderBtn = styled.button`
   background-color: transparent;
   color: #fff;
   text-decoration: none;
@@ -83,6 +83,12 @@ const LoginBtn = styled(Link)`
   }
 `;
 
+const Footer = styled.footer`
+  background-color: #1a1a1d;
+  color: white;
+  padding: 40px;
+  text-align: center;
+`;
 
 const Header = ({ showPainel = true }) => {
   return (

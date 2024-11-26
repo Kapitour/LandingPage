@@ -3,7 +3,7 @@ import styled from "styled-components";
 // Estilo para o container principal do footer
 const FooterContainer = styled.footer`
   padding: 20px;
-  background-color: rgba(201, 52, 52, 0.884);
+  background-color: #333;  /* Off-white */
   text-align: center;
   margin-top: 20px;
 `;
@@ -15,16 +15,33 @@ const FooterContent = styled.div`
   margin-bottom: 20px;
   align-items: center;
   font-size: 20px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 20px;
+  }
 `;
 
 // Estilo para cada coluna do footer
 const FooterColumn = styled.div`
+  color: white;
   h3 {
     margin-bottom: 10px;
+    color: #c3073f;/* Vermelho pastel */
   }
 
   p {
     margin: 5px 0;
+    color: white; /* Cor neutra para texto */
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+      text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    }
   }
 `;
 
@@ -33,43 +50,62 @@ const Form = styled.form`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  
 `;
 
 // Estilo para os inputs e textarea
 const Input = styled.input`
-  color: #424242;
   width: 400px;
   height: 35px;
   padding: 8px;
   margin-bottom: 10px;
   box-sizing: border-box;
   border-radius: 5px;
-  background-color: #ebebeb;
+  background-color: #4e4e50; 
+  color: white;
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 5px #c93434;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const Textarea = styled.textarea`
   width: 400px;
-  color: #424242;
+  color: #3e4444;
   padding: 8px;
   margin-bottom: 10px;
   box-sizing: border-box;
   border-radius: 5px;
-  background-color: #ebebeb;
+  background-color: #4e4e50; /* Off-white */
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 5px #c93434;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 // Estilo para o botão de envio
 const SubmitButton = styled.button`
   padding: 10px 20px;
-  background-color: white;
-  color: rgba(201, 52, 52, 0.884);
+  background-color: #c93434; /* Vermelho pastel */
+  color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
 
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
   &:hover {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #a82a2a; /* Vermelho mais escuro no hover */
+    transform: scale(1.05);
   }
 `;
 
@@ -78,6 +114,7 @@ const Copyright = styled.div`
   text-align: center;
   margin-top: 20px;
   font-size: 14px;
+  color: #727474;
 `;
 
 const Footer = () => {
@@ -86,9 +123,9 @@ const Footer = () => {
       <FooterContent>
         <FooterColumn>
           <h3>Contato</h3>
-          <p>Telefone: 21 98358-1550</p>
-          <p>Email: plataformadigitalkapitour@gmail.com</p>
-          <p>Instagram: @kapi.tour</p>
+          <p><a href="tel:+5521983581550">Telefone: 21 98358-1550</a></p>
+          <p><a href="mailto:plataformadigitalkapitour@gmail.com">Email: plataformadigitalkapitour@gmail.com</a></p>
+          <p><a href="https://www.instagram.com/kapi.tour" target="_blank" rel="noopener noreferrer">Instagram: @kapi.tour</a></p>
         </FooterColumn>
 
         <FooterColumn>
