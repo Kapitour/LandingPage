@@ -122,9 +122,9 @@ const Parceiros = () => {
             alt="Vassouras Tec"
           />
           <CardText>
-            Vassouras Tec, uma incubadora tecnológica da Univassouras. Nós temos
-            contrato com eles e eles auxiliam nosso projeto com inovação e
-            suporte técnico.
+            Vassouras Tec, incubadora tecnológica da Univassouras. 
+            Nós somos encubados e temos os seu auxilio em nosso projeto 
+            com inovação e suporte jurídico e documental.
           </CardText>
         </Card>
       </RowContainer>
