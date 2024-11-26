@@ -75,7 +75,7 @@ const Input = styled.input`
 
 const Textarea = styled.textarea`
   width: 400px;
-  color: #3e4444;
+  color: #fff;
   padding: 8px;
   margin-bottom: 10px;
   box-sizing: border-box;
