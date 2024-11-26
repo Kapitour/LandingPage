@@ -34,7 +34,7 @@ const Logo = styled(Link)`
   font-weight: bold;
 `;
 
-const HeaderBtn = styled.button`
+const HeaderBtn = styled(Link)`
   background-color: transparent;
   color: #fff;
   text-decoration: none;
@@ -83,12 +83,6 @@ const LoginBtn = styled(Link)`
   }
 `;
 
-const Footer = styled.footer`
-  background-color: #1a1a1d;
-  color: white;
-  padding: 40px;
-  text-align: center;
-`;
 
 const Header = ({ showPainel = true }) => {
   return (
