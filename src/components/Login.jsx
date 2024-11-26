@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 // Estilo para o contêiner principal
 const Container = styled.div`
   display: flex;
   width: 100%;
   height: 100vh;
-  background-color: #1A1A1D;
+  background-color: #1a1a1d;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -26,7 +26,7 @@ const LogoSection = styled.div`
     rgb(201, 52, 52, 0.733) 25%,
     rgb(201, 52, 52, 0.733) 85%,
     rgba(201, 52, 52, 0) 100%
-  ); 
+  );
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,7 +98,7 @@ const Button = styled.button`
   }
 `;
 
-const Link = styled.a`
+const Cadastro = styled(Link)`
   display: block;
   margin-top: 15px;
   color: rgba(255, 94, 94, 0.884);
@@ -121,12 +121,12 @@ const Divider = styled.div`
     content: "";
     flex: 1;
     height: 1px;
-    background-color:#fff;
+    background-color: #fff;
   }
 
   span {
     margin: 0 10px;
-    color: #fff ;
+    color: #fff;
     font-size: 14px;
     font-weight: bold;
   }
@@ -183,14 +183,10 @@ const BackButton = styled.button`
   }
 `;
 
-const Login = () => {
-  const navigate = useNavigate();
-
+const Login = ({ showPainel = true }) => {
   return (
     <Container>
-      <BackButton onClick={() => navigate("/")}>
-        &lt;
-      </BackButton>
+      <BackButton to="/">&lt;</BackButton>
       <SubContainer>
         <LogoSection>
           <Logo />
@@ -203,7 +199,7 @@ const Login = () => {
               <Label>Senha:</Label>
               <Input type="password" required />
               <Button type="submit">Login</Button>
-              <Link href="/register">Cadastrar-se</Link>
+              <Cadastro to="/register">Cadastrar-se</Cadastro>
             </form>
 
             <Divider>
