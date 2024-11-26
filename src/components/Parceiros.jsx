@@ -106,10 +106,10 @@ const Parceiros = () => {
         <Card>
           <AgmLogo />
           <CardText>
-            Parceria com a AGM Associação dos Guias de Turismo de Maricá. Deseja
-            fazer excursões, trilhas, escaladas, canoagem e muito mais com um
-            profissional do ramo de forma segura? Entre em contato e não se
-            esqueça de dizer que buscou por meio da Kapitour!
+            Parceria com a AGM Associação dos Guias de Turismo de Maricá. 
+            Deseja fazer excursões, trilhas, escaladas, canoagem e muito mais 
+            com um profissional do ramo de forma segura? Entre em contato e 
+            não se esqueça de dizer que buscou por meio da Kapitour!
           </CardText>
           <ContactBtn href="https://wa.me/5521971292030?text=Ol%C3%A1%20vim%20pela%20Kapitour%20e%20gostaria%20de%20contratar%20um%20guia%20de%20turismo!">
             Guias de Turismo
@@ -123,9 +123,9 @@ const Parceiros = () => {
             alt="Vassouras Tec"
           />
           <CardText>
-            Vassouras Tec, uma incubadora tecnológica da Univassouras. Nós temos
-            contrato com eles e eles auxiliam nosso projeto com inovação e
-            suporte técnico.
+            Vassouras Tec, incubadora tecnológica da Univassouras. 
+            Somos pré incumbados e recebemos auxilio em nosso projeto 
+            com inovação e suporte jurídico e documental.
           </CardText>
         </Card>
       </RowContainer>
