@@ -9,6 +9,7 @@ const FooterContainer = styled.footer`
 `;
 
 // Estilo para a seção interna dividida em duas colunas
+// Estilo para a seção interna dividida em duas colunas
 const FooterContent = styled.div`
   display: flex;
   justify-content: space-around;
@@ -16,23 +17,43 @@ const FooterContent = styled.div`
   align-items: center;
   font-size: 20px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1020px) {
     flex-direction: column;
     gap: 20px;
+
+    // Altera a ordem para dispositivos móveis
+    & > div:first-child {
+      order: 1; /* Contatos */
+    }
+    & > div:last-child {
+      order: 2; /* Formulário */
+    }
+
+    // Ajusta tamanho de fonte
+    font-size: 24px; /* Aumenta a fonte geral */
   }
 `;
 
 // Estilo para cada coluna do footer
 const FooterColumn = styled.div`
   color: white;
+
   h3 {
     margin-bottom: 10px;
-    color: #c3073f;/* Vermelho pastel */
+    color: #c3073f; /* Vermelho pastel */
+
+    @media (max-width: 1020px) {
+      font-size: 28px; /* Título maior no celular */
+    }
   }
 
   p {
     margin: 5px 0;
-    color: white; /* Cor neutra para texto */
+    color: white;
+
+    @media (max-width: 1020px) {
+      font-size: 22px; /* Texto maior no celular */
+    }
   }
 
   a {
@@ -41,6 +62,10 @@ const FooterColumn = styled.div`
 
     &:hover {
       text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    @media (max-width: 1020px) {
+      font-size: 22px; /* Links maiores no celular */
     }
   }
 `;
@@ -60,7 +85,7 @@ const Input = styled.input`
   margin-bottom: 10px;
   box-sizing: border-box;
   border-radius: 5px;
-  background-color: #4e4e50; 
+  background-color: #4e4e50;
   color: white;
 
   &:focus {
@@ -68,26 +93,30 @@ const Input = styled.input`
     box-shadow: 0 0 5px #c93434;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1020px) {
     width: 100%;
+    font-size: 18px;
+     /* Aumenta o texto dos inputs */
   }
 `;
 
 const Textarea = styled.textarea`
   width: 400px;
-  color: #3e4444;
+  color: #fff;
   padding: 8px;
   margin-bottom: 10px;
   box-sizing: border-box;
   border-radius: 5px;
-  background-color: #4e4e50; /* Off-white */
+  background-color: #4e4e50;
+
   &:focus {
     outline: none;
     box-shadow: 0 0 5px #c93434;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1020px) {
     width: 100%;
+    font-size: 18px; /* Aumenta o texto do textarea */
   }
 `;
 

@@ -27,11 +27,12 @@ const RowContainer = styled.div`
   max-width: 1200px;
   gap: 20px;
 
-  @media (max-width: 768px) {
-    flex-direction: column;
+  @media (max-width: 1020px) { /* Define regras para dispositivos menores */
+    flex-direction: column; /* Altera para coluna */
+    align-items: center; /* Centraliza os itens */
+    gap: 30px; /* Ajusta o espaçamento entre os cards */
   }
 `;
-
 // Estilo dos cards
 const Card = styled.div`
   background-color: #333;
@@ -45,7 +46,7 @@ const Card = styled.div`
   justify-content: center;
   flex: 1;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1020px) {
     width: 100%;
   }
 `;
