@@ -158,7 +158,7 @@ const IconButton = styled.button`
   }
 `;
 
-const BackButton = styled.button`
+const BackButton = styled(Link)`
   position: absolute;
   top: 20px;
   left: 20px;
