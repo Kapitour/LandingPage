@@ -27,12 +27,11 @@ const RowContainer = styled.div`
   max-width: 1200px;
   gap: 20px;
 
-  @media (max-width: 1020px) { /* Define regras para dispositivos menores */
-    flex-direction: column; /* Altera para coluna */
-    align-items: center; /* Centraliza os itens */
-    gap: 30px; /* Ajusta o espaçamento entre os cards */
+  @media (max-width: 768px) {
+    flex-direction: column;
   }
 `;
+
 // Estilo dos cards
 const Card = styled.div`
   background-color: #333;
@@ -46,7 +45,7 @@ const Card = styled.div`
   justify-content: center;
   flex: 1;
 
-  @media (max-width: 1020px) {
+  @media (max-width: 768px) {
     width: 100%;
   }
 `;
@@ -106,10 +105,10 @@ const Parceiros = () => {
         <Card>
           <AgmLogo />
           <CardText>
-            Parceria com a AGM Associação dos Guias de Turismo de Maricá. 
-            Deseja fazer excursões, trilhas, escaladas, canoagem e muito mais 
-            com um profissional do ramo de forma segura? Entre em contato e 
-            não se esqueça de dizer que buscou por meio da Kapitour!
+            Parceria com a AGM Associação dos Guias de Turismo de Maricá. Deseja
+            fazer excursões, trilhas, escaladas, canoagem e muito mais com um
+            profissional do ramo de forma segura? Entre em contato e não se
+            esqueça de dizer que buscou por meio da Kapitour!
           </CardText>
           <ContactBtn href="https://wa.me/5521971292030?text=Ol%C3%A1%20vim%20pela%20Kapitour%20e%20gostaria%20de%20contratar%20um%20guia%20de%20turismo!">
             Guias de Turismo
@@ -123,9 +122,9 @@ const Parceiros = () => {
             alt="Vassouras Tec"
           />
           <CardText>
-            Vassouras Tec, incubadora tecnológica da Univassouras. 
-            Somos pré incumbados e recebemos auxilio em nosso projeto 
-            com inovação e suporte jurídico e documental.
+            Vassouras Tec, uma incubadora tecnológica da Univassouras. Nós temos
+            contrato com eles e eles auxiliam nosso projeto com inovação e
+            suporte técnico.
           </CardText>
         </Card>
       </RowContainer>

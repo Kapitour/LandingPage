@@ -9,21 +9,12 @@ const CarouselContainer = styled.div`
   overflow: hidden;
   border-radius: 15px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-
-  @media (max-width: 768px) {
-    width: 100%; /* Ajusta a largura para ocupar a tela toda */
-    height: 250px; /* Pode ajustar a altura para dispositivos menores */
-  }
 `;
 
 const CarouselContent = styled.div`
   display: flex;
   transition: transform 0.5s ease-in-out;
   transform: translateX(-${(props) => props.currentIndex * 50}%); /* Mostra 2 slides (50% cada) */
-
-  @media (max-width: 768px) {
-    transform: translateX(-${(props) => props.currentIndex * 100}%); /* Mostra 1 slide (100% cada) */
-  }
 `;
 
 const Slide = styled.div`
@@ -34,11 +25,6 @@ const Slide = styled.div`
   justify-content: center;
   align-items: center;
   background-color: #1a1a1d;
-
-  @media (max-width: 1020px) {
-    width: 100%; /* Cada slide ocupa 100% da largura no celular */
-    height: 250px; /* Ajusta a altura para dispositivos menores */
-  }
 `;
 
 const Image = styled.img`
@@ -46,11 +32,6 @@ const Image = styled.img`
   height: 95%;
   object-fit: cover;
   border-radius: 15px;
-
-  @media (max-width: 1020px) {
-    width: 100%; /* Imagem ocupa toda a largura no celular */
-    height: auto; /* Mantém a proporção da altura */
-  }
 `;
 
 const Button = styled.button`
@@ -78,11 +59,6 @@ const Button = styled.button`
   }
   &.next {
     right: 10px;
-  }
-
-  @media (max-width: 1020px) {
-    width: 30px; /* Botões menores no celular */
-    height: 30px;
   }
 `;
 

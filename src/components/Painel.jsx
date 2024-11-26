@@ -5,12 +5,7 @@ const ContainerPainel = styled.div`
   gap: 20px;
   justify-content: center;
   margin-top: 20px;
-
-  @media (max-width: 1020px) { /* Altere o valor se necessário para o seu layout */
-    flex-direction: column;
-    align-items: center;
-    gap: 10px; /* Pode ajustar o espaçamento entre os cards */
-  }
+  
 `;
 
 const Card = styled.div`

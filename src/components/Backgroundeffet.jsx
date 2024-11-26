@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+
 const PainelImg = styled.div`
   position: relative;
   width: 100%;
@@ -7,11 +8,6 @@ const PainelImg = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
-  @media (max-width: 1020px) { /* Ajuste para telas de celular */
-    height: 30em; /* Reduz a altura para dispositivos menores */
-    flex-direction: column; /* Garante alinhamento vertical no celular */
-  }
 `;
 
 const PainelImg1 = styled.div`
@@ -36,22 +32,15 @@ const PainelImg2 = styled.div`
   z-index: 1;
   width: 50%;
   height: 70%;
-
-  @media (max-width: 1020px) { /* Ajuste para telas de celular */
-    height: 50%; /* Reduz proporcionalmente para telas menores */
-    width: 80%; /* Expande um pouco para ocupar mais largura */
-    margin: auto; 
-    margin-left:26%;/* Garante centralização horizontal e vertical */
-  }
 `;
 
 const Backgroundeffect = () => {
-  return (
-    <PainelImg>
-      <PainelImg1 />
-      <PainelImg2 />
-    </PainelImg>
-  );
-};
+    return (
+      <PainelImg>
+        <PainelImg1 />
+        <PainelImg2 />
+      </PainelImg>
+    );
+  };
 
 export default Backgroundeffect;
